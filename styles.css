@@ -1,0 +1,208 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 210mm;
+  margin: 20px auto;
+  padding: 40px 75px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  min-height: 297mm;
+}
+
+/* Заголовки */
+h1 {
+  margin-left: 55px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 25px 0 0;
+  color: #000;
+}
+
+/* Параграфы */
+p {
+  margin-bottom: 20px;
+}
+
+.table-container {
+  display: flex;
+  border: 2px solid black;
+  border-bottom: none;
+}
+.table-last {
+  border-bottom: 2px solid black;
+}
+
+/* Списки перфорации */
+.perforation {
+  margin-bottom: 30px;
+}
+.perforation-list {
+  margin: 10px 0px 40px 40px;
+  padding: 0;
+  list-style: none;
+}
+.perforation-list li {
+  position: relative;
+}
+
+.perforation-list li::before {
+  content: "•";
+  font-size: 15px;
+  color: black;
+  position: absolute;
+  left: -10px;
+  top: 3px;
+}
+
+.perforation-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* PDF ссылки */
+.pdf-link {
+  margin: 0 0 10px;
+  margin-left: 60px;
+  color: #295fdd;
+  cursor: pointer;
+}
+.border-container {
+  border-right: 2px solid black;
+  width: 180px;
+}
+
+/* Преимущества */
+.advantages-image {
+  float: right;
+  margin: 10px;
+  max-width: 300px;
+  height: auto;
+}
+.description-container {
+  display: block;
+}
+
+.advantages-list {
+  padding-left: 20px;
+  margin: 20px 0;
+  font-size: 19px;
+  font-style: unset;
+}
+
+.advantages-list li {
+  margin-bottom: 20px;
+}
+
+/* Качество */
+.quality-level {
+  margin-bottom: 60px;
+  .quality-container {
+    display: flex;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+.quality-description p {
+  font-size: 20px;
+  padding-right: 20px;
+}
+.quality-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Прочность */
+
+#stelia {
+  padding-top: 5px;
+}
+#perf-types {
+  text-align: center;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+#quality-title {
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+  margin-right: 80px;
+}
+.strength {
+  margin-top: 60px;
+  max-width: 590px;
+  margin: 0 auto;
+}
+#strength-title {
+  text-align: center;
+  margin-left: 45px;
+}
+
+/* Медиа запросы для адаптивности */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .advantages-image {
+    float: none;
+    display: block;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .perforation-item {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
